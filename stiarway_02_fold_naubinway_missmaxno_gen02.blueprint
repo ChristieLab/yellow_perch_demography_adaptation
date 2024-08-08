@@ -1,0 +1,25 @@
+#example blueprint file
+#input setting
+popid: fold_naubinway_missmaxno_gen02 # id of the population (no white space)
+nseq: 60 # number of sequences
+L: 866806844 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 706739 129575 58094 40597 31706 27259 23725 21132 19403 18213 17546 16266 15442 14534 13831 13359 13036 12776 12493 12041 11966 11559 11313 11349 11463 11837 11526 11836 13097 10567 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+#smallest_size_of_SFS_bin_used_for_estimation: 1 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 15 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 15 29 44 58 # number of random break points for each try (separated by white space)
+project_dir: /scratch/bell/yin168/pflavescens/gt_w210_01/fig3b_stairway_01/fold_naubinway_missmaxno_gen02 # project directory
+stairway_plot_dir: /scratch/bell/yin168/pflavescens/gt_w210_01/fig3b_stairway_01/stairway-plot-v2-master/stairway_plot_v2.1.1/stairway_plot_es # directory to the stairway plot files
+ninput: 200 # number of input files to be created for each estimation
+#random_seed: 6
+#output setting
+mu: 1.2e-8 # assumed mutation rate per site per generation
+year_per_generation: 2 # assumed generation time (in years)
+#plot setting
+plot_title: fold_naubinway_missmaxno_gen02 # title of the plot
+xrange: 0,0 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size

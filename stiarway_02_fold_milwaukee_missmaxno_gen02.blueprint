@@ -1,0 +1,25 @@
+#example blueprint file
+#input setting
+popid: fold_milwaukee_missmaxno_gen02 # id of the population (no white space)
+nseq: 60 # number of sequences
+L: 866862835 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 907374 148217 60916 41166 32552 26651 23843 21720 19782 18198 17029 16049 15566 14684 14359 13723 13302 12793 12516 12578 12403 12102 12135 11990 11723 11857 11651 12353 13541 11054 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+#smallest_size_of_SFS_bin_used_for_estimation: 1 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 15 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 15 29 44 58 # number of random break points for each try (separated by white space)
+project_dir: /scratch/bell/yin168/pflavescens/gt_w210_01/fig3b_stairway_01/fold_milwaukee_missmaxno_gen02 # project directory
+stairway_plot_dir: /scratch/bell/yin168/pflavescens/gt_w210_01/fig3b_stairway_01/stairway-plot-v2-master/stairway_plot_v2.1.1/stairway_plot_es # directory to the stairway plot files
+ninput: 200 # number of input files to be created for each estimation
+#random_seed: 6
+#output setting
+mu: 1.2e-8 # assumed mutation rate per site per generation
+year_per_generation: 2 # assumed generation time (in years)
+#plot setting
+plot_title: fold_milwaukee_missmaxno_gen02 # title of the plot
+xrange: 0,0 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size
